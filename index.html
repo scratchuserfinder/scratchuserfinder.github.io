@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>scratch user finder</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-container w3-teal">
+  <h1 class="w3-center w3-animate-top"> Scratch User Finder</h1>
+</div>
+<div class="w3-container w3-animate-left">
+Ever been too hard to change a few letters in a scratch URL to go to a different account?
+<br><center><img class="w3-card-4" src="https://media.giphy.com/media/PKgkx1bIE03Ic/giphy.gif"></center><br>
+Well than this is for you! Type in the user you want to find below:
+</div>
+<div class="w3-center w3-container w3-animate-right">
+<input class="w3-input" type="text" id="mytextbox" value="World_Languages" /><br>
+</div>
+<div class="w3-center w3-container w3-animate-bottom">
+<button class="w3-button w3-block w3-red" onclick="gotoUser()">submit</button>
+</div>
+<script>var textbox = document.getElementById('mytextbox');</script>
+<script>
+function gotoUser() {
+window.location.replace("https://scratch.mit.edu/users/"+textbox.value)
+}
+</script>
+</body>
+</html>
